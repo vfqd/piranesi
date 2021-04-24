@@ -1,0 +1,46 @@
+fileFormatVersion: 2
+guid: 8e5c268249e1944439ecf7e1f01ad271
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b6382c40c629eef48b13685e184932d7, type: 3}
+  importOptions:
+    scale: 1
+    splitLayers: 0
+    splitSlices: 0
+    fileNameFormat: '{title}_{tag}_frame{tagframe1}'
+    ditheringAlgorithmType: 0
+    ditheringMatrixType: 0
+    colorMode: 0
+  spriteImportOptions:
+    pixelsPerUnit: 100
+    pivot: {x: 0.5, y: 0.5}
+    extrude: 0
+    meshType: 1
+    border: {x: 0, y: 0, z: 0, w: 0}
+  textureCreationOptions:
+    textureWrapMode: 1
+    filterMode: 0
+    alphaIsTransparency: 1
+  colabOptions:
+    exportToFile: 0
+    exportDirectory: Sprites/{filename}
+  animationOptions: []
+  sheetData:
+    frames: []
+    meta:
+      version: 
+      image: 
+      format: 
+      size:
+        w: 0
+        h: 0
+      scale: 0
+      frameTags: []
+      slices: []
+    pathToSheetData: 
+    aseFileName: 
