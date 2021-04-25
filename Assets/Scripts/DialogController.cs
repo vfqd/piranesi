@@ -16,19 +16,17 @@ public class DialogController : MonoSingleton<DialogController>
     {
         if (Input.GetMouseButtonDown(0))
         {
-            var text = Instantiate(dialogPrefab, dialogBox);
-            text.rectTransform.localRotation = Quaternion.Euler(0,0,180);
-            text.GetComponent<TextAnimatorPlayer>().ShowText(" - " + Random.Range(0, 100000) + " "
-                        + Random.Range(0, 100000) + " "
-                        + Random.Range(0, 100000) + " "
-                        + Random.Range(0, 100000) + " "
-                        + Random.Range(0, 100000) + " "
-                        + Random.Range(0, 100000) + " "
-                        + Random.Range(0, 100000) + " "
-                        + Random.Range(0, 100000) + " "
-                        + Random.Range(0, 100000) + " ");
+            MapController.Instance.AddNewAcolytes(2);
         }
+        
         dialogBox.GetComponent<VerticalLayoutGroup>().CalculateLayoutInputVertical();
         dialogBox.GetComponent<VerticalLayoutGroup>().SetLayoutVertical();
+    }
+
+    public void PlayDialog(string dialog)
+    {
+        var text = Instantiate(dialogPrefab, dialogBox);
+        text.rectTransform.localRotation = Quaternion.Euler(0,0,180);
+        text.GetComponent<TextAnimatorPlayer>().ShowText(dialog);
     }
 }
