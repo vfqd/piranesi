@@ -41,7 +41,7 @@ public class HoverPanel : MonoSingleton<HoverPanel>
         {
             _rectTransform.anchorMin = Vector2.zero;
             _rectTransform.anchorMax = Vector2.zero;
-            offset.y = 32;
+            offset.y = 64;
         }
         else if (Input.mousePosition.y > Screen.height * 0.8f)
         {

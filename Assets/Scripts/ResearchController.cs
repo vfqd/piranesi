@@ -16,6 +16,8 @@ public class ResearchController : MonoSingleton<ResearchController>
     public TextMeshProUGUI currentNameBar;
     public TextMeshProUGUI currentDesc;
     public TextMeshProUGUI currentPercent;
+
+    public int storedResearch = 0;
     
     public Image currentIcon;
 
@@ -25,13 +27,23 @@ public class ResearchController : MonoSingleton<ResearchController>
     {
     }
 
+    private float _storedResearchDt = 0;
+
     private void Update()
     {
         if (currentResearch)
         {
+            _storedResearchDt += Time.deltaTime;
             float percent = (float) currentResearch.progress / currentResearch.cost;
-            currentPercent.text = Mathf.RoundToInt(percent*100) + "%";
+            currentPercent.text = currentResearch.progress + "/" + currentResearch.cost;
 
+            if (storedResearch > 0 && _storedResearchDt > 1)
+            {
+                _storedResearchDt = 0;
+                IncreaseProgressOfCurrentResearch(1);
+                storedResearch--;
+            }
+            
             foreach (var progress in progressBars)
             {
                 progress.fillAmount = percent;
@@ -47,6 +59,18 @@ public class ResearchController : MonoSingleton<ResearchController>
                 progress.fillAmount = 0;
             }
             currentName.text = currentNameBar.text = "";
+            currentDesc.text = "";
+            currentIcon.enabled = false;
+        }
+    }
+
+    public void IncreaseProgressOfCurrentResearch(int amt)
+    {
+        if (!currentResearch) return;
+        
+        if (currentResearch.IncreaseProgress(amt))
+        {
+            currentResearch = null;
         }
     }
 
@@ -61,8 +85,6 @@ public class ResearchController : MonoSingleton<ResearchController>
 
     public void ToggleResearchPanel()
     {
-        print("kakakakkaka");
-
         if (!panel.activeSelf)
         {
             panel.SetActive(true);

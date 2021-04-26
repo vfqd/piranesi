@@ -17,7 +17,7 @@ public class HoverResearch : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (!_research.isVisible) return;
         HoverPanel.Instance.ShowText(_research.name +
                                      "\n\n" +
-                                     Mathf.RoundToInt(((float)_research.progress/_research.cost)*100) + "%" +
+                                     _research.progress + "/" + _research.cost +
                                     "\n\n" +
                                      _research.description
         );

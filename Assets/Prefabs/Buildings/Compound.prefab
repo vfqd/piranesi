@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 7366037716237220194}
   - component: {fileID: 7366037716237220195}
   - component: {fileID: 2625993164176380275}
+  - component: {fileID: 3602396970119988270}
+  - component: {fileID: -7354987275515904051}
+  - component: {fileID: -5812989437540235762}
   m_Layer: 0
   m_Name: Compound
   m_TagString: Untagged
@@ -106,10 +109,12 @@ MonoBehaviour:
   description: 
   size: 2
   canFlipSprite: 1
-  requiredAtLeastOneOfString: 
+  requiredString: tile
   myTilemapState:
     explored: 0
     tilemap: {fileID: 0}
+    toUnlockWhenExplored: []
+    fogClouds: []
   myCell: {x: 0, y: 0, z: 0}
   acolyteCount: 0
   acolytesMax: 5
@@ -119,6 +124,47 @@ MonoBehaviour:
   - {fileID: 4678822142254735757}
   - {fileID: 4119281433248063218}
   - {fileID: 3978145435617799154}
+  placed: 0
+--- !u!58 &3602396970119988270
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7366037716237220192}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.016797781, y: 0.4880581}
+  serializedVersion: 2
+  m_Radius: 0.7888861
+--- !u!114 &-7354987275515904051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7366037716237220192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd2f450a06245c9a93d5e73cebe0888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5812989437540235762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7366037716237220192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857428be223246b8a93fdcda484721ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1615663187991053498
 PrefabInstance:
   m_ObjectHideFlags: 0

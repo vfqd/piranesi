@@ -18,6 +18,8 @@ public class CameraController : MonoSingleton<CameraController>
 
     public float panZone;
 
+    public bool lockPos;
+
     private void Awake()
     {
         Cursor.lockState = CursorLockMode.Confined;
@@ -34,9 +36,11 @@ public class CameraController : MonoSingleton<CameraController>
     {
         shaker.ShakeOnce(3,2,0,.33f);
     }
-
+    
     private void Zoom()
     {
+        if (!GameController.Instance.hasLeftLondon) return;
+
         var mouseWheel = Input.mouseScrollDelta.y;
 
         if (mouseWheel > 0)
@@ -58,16 +62,17 @@ public class CameraController : MonoSingleton<CameraController>
     private void PanAtScreenEdge()
     {
         if (Cursor.lockState != CursorLockMode.Confined) return;
-        if (HoverPanel.IsHovering) return;
+        if (!GameController.Instance.hasLeftLondon) return;
+        if (lockPos) return;
 
         var pos = parent.transform.position;
         var p = Input.mousePosition;
         
         Vector2 delta = Vector2.zero;
-        if (!(pos.x < xBounds.x) && p.x > 0 && p.x < panZone) delta += new Vector2(-1, 0);
+        if (!(pos.x < xBounds.x) && p.x > -panZone && p.x < panZone) delta += new Vector2(-1, 0);
         else if (!(pos.x > xBounds.y) && p.x < Screen.width+panZone && p.x > Screen.width - panZone) delta += new Vector2(1, 0);
         
-        if (!(pos.y < yBounds.x) && p.y > 0 && p.y < panZone) delta += new Vector2(0, -1);
+        if (!(pos.y < yBounds.x) && p.y > -panZone && p.y < panZone) delta += new Vector2(0, -1);
         else if (!(pos.y > yBounds.y) && p.y < Screen.height+panZone && p.y > Screen.height - panZone) delta += new Vector2(0, 1);
 
         delta = delta.normalized;

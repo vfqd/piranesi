@@ -74,6 +74,54 @@ TextureImporter:
   - first:
       213: -7326330765846486680
     second: London4
+  - first:
+      213: 5264979163374914166
+    second: Tiles_24
+  - first:
+      213: -8644279775636323431
+    second: Watchpost
+  - first:
+      213: 3841374895227053369
+    second: Lumbermill
+  - first:
+      213: 2398694386035660818
+    second: Wharf
+  - first:
+      213: 8976018127306389262
+    second: Mineshaft
+  - first:
+      213: 6930148502292774571
+    second: TreeSmall
+  - first:
+      213: 4243927867023665446
+    second: TreeLarge
+  - first:
+      213: 4080561482957604121
+    second: Plant
+  - first:
+      213: 887565136908663245
+    second: MineWall
+  - first:
+      213: 5891617607487913053
+    second: MineFloor
+  - first:
+      213: 3342371246333263808
+    second: WaterShallow
+  - first:
+      213: 6074651378490148917
+    second: Ocean
+  - first:
+      213: 926801475820779279
+    second: Pen
+  - first:
+      213: -5481814538712004923
+    second: Runes
+  - first:
+      213: 5844434069267237002
+    second: Scroll
+  - first:
+      213: 7394766530161362282
+    second: Door
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -672,6 +720,342 @@ TextureImporter:
       bones: []
       spriteID: 86164ba2cf4a35a90800000000000000
       internalID: -7326330765846486680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a8bce67a6f01940800000000000000
+      internalID: 5264979163374914166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watchpost
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9938a1ae759590880800000000000000
+      internalID: -8644279775636323431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumbermill
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935ac1f5d1e4f4530800000000000000
+      internalID: 3841374895227053369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wharf
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2181164d5dfd94120800000000000000
+      internalID: 2398694386035660818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mineshaft
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0770970ee8319c70800000000000000
+      internalID: 8976018127306389262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeSmall
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baebdd76855dc2060800000000000000
+      internalID: 6930148502292774571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeLarge
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 112
+        width: 17
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629a356e8e575ea30800000000000000
+      internalID: 4243927867023665446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 112
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.4795723, y: 0.25997448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91544db8c0111a830800000000000000
+      internalID: 4080561482957604121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineWall
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9367c1ac3415c00800000000000000
+      internalID: 887565136908663245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineFloor
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5cf0c6bffa33c150800000000000000
+      internalID: 5891617607487913053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterShallow
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf7c2d90fc726e20800000000000000
+      internalID: 3342371246333263808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5380e3d6e3f7d4450800000000000000
+      internalID: 6074651378490148917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 80
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07fa972809acdc00800000000000000
+      internalID: 926801475820779279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runes
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 162
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6cf7f88beace3b0800000000000000
+      internalID: -5481814538712004923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scroll
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 161
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a884dd322d99b1150800000000000000
+      internalID: 5844434069267237002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 160
+        width: 32
+        height: 54
+      alignment: 9
+      pivot: {x: 0.4240589, y: 0.15851367}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a654733eafc7f9660800000000000000
+      internalID: 7394766530161362282
       vertices: []
       indices: 
       edges: []

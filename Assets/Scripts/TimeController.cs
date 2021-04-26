@@ -1,5 +1,7 @@
 ﻿using System;
+using Buildings;
 using Febucci.UI;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Utils;
@@ -10,6 +12,7 @@ public class TimeController : MonoSingleton<TimeController>
     public Gradient ambient;
     public float lengthOfDayInSeconds;
     public float currentTime;
+    public TextMeshProUGUI speedText;
     
     [Range(0, 1)] public float becomeSunriseAt;
     [Range(0, 1)] public float becomeDayAt;
@@ -25,6 +28,12 @@ public class TimeController : MonoSingleton<TimeController>
 
     private void Update()
     {
+        if (!GameController.Instance.hasLeftLondon)
+        {
+            timeOfDay.GetComponent<TextMeshProUGUI>().text = "Night";
+            return;
+        }
+        
         currentTime += Time.deltaTime;
         if (currentTime >= lengthOfDayInSeconds)
         {
@@ -38,6 +47,16 @@ public class TimeController : MonoSingleton<TimeController>
             _sunrise = true;
             icon.sprite = sunDownSprite;
             timeOfDay.ShowText("Sunrise");
+            Portal.Instance.ProduceResources();
+            
+            foreach (var building in MapController.Instance.buildings)
+            {
+                if (building.type == Building.Type.Compound)
+                {
+                    building.GetComponent<Compound>().TakeCosts();
+                }
+            }
+            ResearchController.Instance.IncreaseProgressOfCurrentResearch(ResourcesController.Instance.hierophantCount*2);
         }
         
         if (currentTime/lengthOfDayInSeconds > becomeDayAt && !_day)
@@ -52,6 +71,17 @@ public class TimeController : MonoSingleton<TimeController>
             _sunset = true;
             icon.sprite = sunDownSprite;
             timeOfDay.ShowText("Sunset");
+
+            if (GameController.Instance.createHierophants)
+            {
+                foreach (var building in MapController.Instance.buildings)
+                {
+                    if (building.type == Building.Type.Altar)
+                    {
+                        building.GetComponent<Altar>().CreateHierophant();
+                    }
+                }
+            }
         }
         
         if (currentTime/lengthOfDayInSeconds > becomeNightAt && !_night)
@@ -60,5 +90,24 @@ public class TimeController : MonoSingleton<TimeController>
             icon.sprite = moonSprite;
             timeOfDay.ShowText("Night");
         }
+    }
+
+    public void ToggleDoubleSpeed()
+    {
+        if (Time.timeScale > 1.1f)
+        {
+            Time.timeScale = 1;
+            speedText.text = "x1";
+        }
+        else
+        {
+            Time.timeScale = 3;
+            speedText.text = "x3";
+        }
+    }
+
+    public float GetLengthOfDayForCalculations()
+    {
+        return GameController.Instance.hasLeftLondon ? lengthOfDayInSeconds : 10;
     }
 }

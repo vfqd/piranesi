@@ -1,4 +1,5 @@
 ﻿using System;
+using Buildings;
 using Researches;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -37,6 +38,8 @@ public class BuildingButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     private void Update()
     {
+        _button.interactable = true;
+
         if (building.woodCost > 0 && ResourcesController.Instance.woodCount < building.woodCost)
         {
             _button.interactable = false;

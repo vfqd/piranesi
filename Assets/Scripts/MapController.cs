@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Buildings;
 using Framework;
 using OneLine;
 using UnityEngine;
@@ -9,7 +10,7 @@ using Random = UnityEngine.Random;
 
 public class MapController : MonoSingleton<MapController>
 {
-    [OneLine] public TileMapState[] tilemaps;
+    public TileMapState[] tilemaps;
     
     public Animator steamCloud;
 
@@ -42,6 +43,7 @@ public class MapController : MonoSingleton<MapController>
                             AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo(0);
                             anim.GetComponent<SpriteRenderer>().flipX = Random.value < 0.25f;
                             anim.Play(info.fullPathHash, -1, Random.Range(0f, 1f));
+                            state.fogClouds.Add(anim.gameObject);
                         }
                     }
                 }
@@ -87,6 +89,26 @@ public class MapController : MonoSingleton<MapController>
                     ResourcesController.Instance.acolytesCount++;
                     toFindHomesFor--;
                     joblessAcolytes++;
+                }
+                if (toFindHomesFor <= 0) break;
+            }
+        }
+    }
+    
+    public void AddNewPrisoners(int count)
+    {
+        int toFindHomesFor = count;
+        
+        for (int i = 0; i < count; i++)
+        {
+            if (toFindHomesFor <= 0) break;
+            foreach (var building in buildings)
+            {
+                if (building.type == Building.Type.Pen && building.HasSpace)
+                {
+                    building.AssignAcolyte();
+                    ResourcesController.Instance.prisonersCount++;
+                    toFindHomesFor--;
                 }
                 if (toFindHomesFor <= 0) break;
             }

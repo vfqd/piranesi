@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1474934916402183351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5483620881055395350}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5483620881055395350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474934916402183351}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.327, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7366037716237220194}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7366037716237220192
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,6 +42,9 @@ GameObject:
   - component: {fileID: 7366037716237220195}
   - component: {fileID: 2625993164176380275}
   - component: {fileID: 2406633743171722068}
+  - component: {fileID: 6028560270677347938}
+  - component: {fileID: 8503021603865739844}
+  - component: {fileID: 2137101312476038470}
   m_Layer: 0
   m_Name: Altar
   m_TagString: Untagged
@@ -34,6 +67,7 @@ Transform:
   - {fileID: 645014198141056627}
   - {fileID: 4678822142254735758}
   - {fileID: 4119281433248063217}
+  - {fileID: 5483620881055395350}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -106,10 +140,13 @@ MonoBehaviour:
   description: 
   size: 2
   canFlipSprite: 1
-  requiredAtLeastOneOfString: 
+  requiredString: tile
   myTilemapState:
     explored: 0
     tilemap: {fileID: 0}
+    toUnlockWhenExplored: []
+    messageWhenExplored: 
+    fogClouds: []
   myCell: {x: 0, y: 0, z: 0}
   acolyteCount: 0
   acolytesMax: 4
@@ -118,6 +155,7 @@ MonoBehaviour:
   - {fileID: 645014198141056624}
   - {fileID: 4678822142254735757}
   - {fileID: 4119281433248063218}
+  placed: 0
 --- !u!95 &2406633743171722068
 Animator:
   serializedVersion: 3
@@ -137,6 +175,52 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &6028560270677347938
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7366037716237220192}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.30862975}
+  serializedVersion: 2
+  m_Radius: 0.80862975
+--- !u!114 &8503021603865739844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7366037716237220192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd2f450a06245c9a93d5e73cebe0888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2137101312476038470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7366037716237220192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6857ddcf7a4da3b4e6890026c90892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2406633743171722068}
+  normalIdle: {fileID: 9100000, guid: 4e0525a36a2134c46ab6e51d988118fc, type: 2}
+  sacrificeIdle: {fileID: 9100000, guid: 93d0e9fc56062de46a12d5de4346c485, type: 2}
+  hierophantSpawnPoint: {fileID: 5483620881055395350}
+  hierophant: {fileID: 2204637246356075208, guid: 6b10abc147962ae4fa0905e127974d29, type: 3}
+  researchTime: 0
 --- !u!1001 &1615663187991053498
 PrefabInstance:
   m_ObjectHideFlags: 0

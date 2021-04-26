@@ -50,6 +50,60 @@ TextureImporter:
   - first:
       213: 5681967267464321869
     second: XIcon
+  - first:
+      213: -2319476694228375547
+    second: ResearchCompletedIcon
+  - first:
+      213: 9151725625850188775
+    second: ResearchRecruitment
+  - first:
+      213: -7539582390867499684
+    second: ResearchRaid
+  - first:
+      213: -3862903190024489479
+    second: ResearchGreatWork
+  - first:
+      213: -168777754515822616
+    second: ResearchSacrifice
+  - first:
+      213: -8930018218856646630
+    second: ResearchCompoundLessFish
+  - first:
+      213: -7058561907366660472
+    second: ResearchFasterScout
+  - first:
+      213: -9205221584584489300
+    second: ResearchMoreWood
+  - first:
+      213: 1341854236672496375
+    second: ResearchMoreFish
+  - first:
+      213: -7899933087549869777
+    second: ResearchMoreMetals
+  - first:
+      213: -5330826594950682575
+    second: ResearchTower
+  - first:
+      213: -4737426781762327817
+    second: ResearchLumber
+  - first:
+      213: 2486193441875991756
+    second: ResearchWharf
+  - first:
+      213: -148319563816140896
+    second: ResearchMine
+  - first:
+      213: -2592873102402669163
+    second: ResearchPen
+  - first:
+      213: -4710408157825254453
+    second: ResearchRune
+  - first:
+      213: 3718842862631874603
+    second: ResearchScroll
+  - first:
+      213: -2364435144087426543
+    second: DoorIcon
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -469,7 +523,385 @@ TextureImporter:
         serializedVersion: 2
         x: 48
         y: 48
-        width: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b9b9a10276ade40800000000000000
+      internalID: 5681967267464321869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchCompletedIcon
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50868b75c309fcfd0800000000000000
+      internalID: -2319476694228375547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchRecruitment
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3d3a208f5710f70800000000000000
+      internalID: 9151725625850188775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchRaid
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c556d8d03c50e5790800000000000000
+      internalID: -7539582390867499684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchGreatWork
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5fdd4e306346ac0800000000000000
+      internalID: -3862903190024489479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchSacrifice
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7a818c68168adf0800000000000000
+      internalID: -168777754515822616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchCompoundLessFish
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1878434eb3321480800000000000000
+      internalID: -8930018218856646630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchFasterScout
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8867e46d753fa0e90800000000000000
+      internalID: -7058561907366660472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchMoreWood
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6451c7dbb704080800000000000000
+      internalID: -9205221584584489300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchMoreFish
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2973d91593f9210800000000000000
+      internalID: 1341854236672496375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchMoreMetals
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f213c3766bccd5290800000000000000
+      internalID: -7899933087549869777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchTower
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13862c0b4791506b0800000000000000
+      internalID: -5330826594950682575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchLumber
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa62a32177414eb0800000000000000
+      internalID: -4737426781762327817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchWharf
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc9ce153cbb08220800000000000000
+      internalID: 2486193441875991756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchMine
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af7f7d742011fdf0800000000000000
+      internalID: -148319563816140896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchPen
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595bf97a6a3440cd0800000000000000
+      internalID: -2592873102402669163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchRune
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 32
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb39bdbcb441aeb0800000000000000
+      internalID: -4710408157825254453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearchScroll
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 32
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b207baa51ebfb9330800000000000000
+      internalID: 3718842862631874603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoorIcon
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -478,8 +910,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4b9b9a10276ade40800000000000000
-      internalID: 5681967267464321869
+      spriteID: 11a283683c6df2fd0800000000000000
+      internalID: -2364435144087426543
       vertices: []
       indices: 
       edges: []
